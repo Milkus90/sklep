@@ -75,7 +75,7 @@ public class Menu {
 			}
 			case "4" : { // dopisany {blok} aby zmienne byly widoczne tylko tu, np.
 						// index albo tak, albo deklaracja przed
-						// switchem - jak nazwa, cpu itd.
+						// switchem - jak nazwa, cpu itd
 				if (sklep.sprwadzCzyListaPusta()) {
 					System.out.println("Brak produktow w bazie.");
 				} else {
