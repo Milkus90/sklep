@@ -40,7 +40,7 @@ public class Menu {
 				cpu = scan.next();
 				System.out.print("Podaj ram komputera:");
 				ram = scan.next();
-				Komputer komp = new Komputer(cena, nazwa, cpu, ram);
+				Komputer komp = new Komputer(nazwa, cena, cpu, ram);
 				sklep.dodajProdukt(komp);
 				break;
 			}
@@ -98,7 +98,7 @@ public class Menu {
 									"Podaj nowa ilosc pamieci ram komputera(aktualna: " + komputer.getRam() + "): ");
 							ram = scan.next();
 
-							komputer.zaktualizuj(cena, nazwa, cpu, ram);
+							komputer.zaktualizuj(nazwa, cena, cpu, ram);
 
 							sklep.zmodyfikujProdukt(index, komputer);
 						} else {

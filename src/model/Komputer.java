@@ -7,7 +7,7 @@ public class Komputer extends Produkt implements UrzadzeniaElektroniczne {
 	private String cpu;
 	private String ram;
 	
-	public Komputer(BigDecimal cena, String nazwa, String cpu, String ram) {
+	public Komputer(String nazwa, BigDecimal cena, String cpu, String ram) {
 		super(cena, nazwa);
 		this.cpu = cpu;
 		this.ram = ram;
@@ -32,11 +32,11 @@ public class Komputer extends Produkt implements UrzadzeniaElektroniczne {
 
 	@Override
 	public String toString() {
-		return "Komputer [cpu=" + cpu + ", ram=" + ram + ", cena=" + cena + ", nazwa=" + nazwa + "]";
+		return "Komputer [nazwa: " + nazwa + ", cpu: " + cpu + ", ram: " + ram + ", cena: " + cena + "]";
 	}
 
 
-	public void zaktualizuj(BigDecimal cena, String nazwa, String cpu, String ram) {
+	public void zaktualizuj(String nazwa, BigDecimal cena, String cpu, String ram) {
 		this.setCena(cena);
 		this.setCpu(cpu);
 		this.setNazwa(nazwa);

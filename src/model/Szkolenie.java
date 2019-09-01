@@ -22,7 +22,7 @@ public class Szkolenie extends Produkt {
 	
 	@Override
 	public String toString() {
-		return "Szkolenie [technologia=" + technologia + ", cena=" + cena + ", nazwa=" + nazwa + "]";
+		return "Szkolenie [nazwa: " + nazwa + ", technologia: " + technologia + ", cena: " + cena + "]";
 	}
 
 	public void zaktualizuj(String nazwa, String technologia, BigDecimal cena){
